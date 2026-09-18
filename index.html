@@ -3,83 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Abdoul Service | Formations digitales</title>
+  <title>Abdoul Service</title>
 
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: #080b14;
-      color: #ffffff;
-      line-height: 1.6;
+      background: #080b12;
+      color: white;
     }
 
     header {
       padding: 20px;
       text-align: center;
-      background: #0d1220;
-      border-bottom: 1px solid #222a3d;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      background: #111827;
     }
 
     .logo {
-      font-size: 27px;
+      font-size: 26px;
       font-weight: bold;
       color: #f5c542;
     }
 
     header p {
-      color: #aeb7ca;
-      font-size: 13px;
-      margin-top: 3px;
+      margin: 5px 0 0;
+      color: #aab3c5;
     }
 
     .hero {
-      padding: 55px 20px 40px;
       text-align: center;
-      background: linear-gradient(180deg, #10182b, #080b14);
+      padding: 60px 20px;
+      background: linear-gradient(180deg, #172033, #080b12);
     }
 
-    .badge {
-      display: inline-block;
-      padding: 7px 13px;
-      border-radius: 30px;
-      background: #1b2438;
-      color: #f5c542;
-      font-size: 13px;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      font-size: 38px;
-      line-height: 1.15;
-      margin-bottom: 16px;
+    .hero h1 {
+      font-size: 36px;
+      margin: 10px 0;
     }
 
     .hero h1 span {
       color: #f5c542;
     }
 
-    .hero-text {
+    .hero p {
+      color: #b8c0cf;
       max-width: 600px;
       margin: auto;
-      color: #b9c1d1;
-      font-size: 16px;
     }
 
     .price {
-      margin: 25px auto;
-      font-size: 25px;
+      margin: 25px 0;
+      font-size: 24px;
       font-weight: bold;
-      color: #ffffff;
     }
 
     .price span {
@@ -88,33 +67,31 @@
 
     .whatsapp {
       display: inline-block;
-      padding: 14px 24px;
-      border-radius: 10px;
       background: #25d366;
       color: white;
       text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
       font-weight: bold;
-      margin-top: 5px;
     }
 
     section {
-      padding: 40px 18px;
       max-width: 1100px;
       margin: auto;
+      padding: 45px 18px;
     }
 
-    .section-title {
+    .title {
       text-align: center;
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
 
-    .section-title h2 {
-      font-size: 27px;
-      margin-bottom: 7px;
+    .title h2 {
+      font-size: 28px;
     }
 
-    .section-title p {
-      color: #9da7ba;
+    .title p {
+      color: #9da7b8;
     }
 
     .courses {
@@ -125,84 +102,53 @@
 
     .course {
       background: #111827;
-      border: 1px solid #222c42;
+      border: 1px solid #263044;
       border-radius: 15px;
       padding: 20px;
-      transition: transform 0.2s;
-    }
-
-    .course:hover {
-      transform: translateY(-4px);
     }
 
     .number {
       color: #f5c542;
-      font-weight: bold;
       font-size: 13px;
+      font-weight: bold;
     }
 
     .course h3 {
-      margin: 8px 0;
       font-size: 19px;
+      margin: 10px 0;
     }
 
     .course p {
-      color: #aab3c5;
+      color: #aeb7c8;
       font-size: 14px;
-      min-height: 48px;
     }
 
     .course-bottom {
-      margin-top: 18px;
+      margin-top: 20px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 10px;
+      align-items: center;
     }
 
     .course-price {
-      font-weight: bold;
       color: #f5c542;
+      font-weight: bold;
     }
 
     .buy {
       background: #f5c542;
-      color: #080b14;
-      padding: 9px 13px;
-      border-radius: 8px;
+      color: #080b12;
       text-decoration: none;
+      padding: 9px 14px;
+      border-radius: 8px;
       font-weight: bold;
-      font-size: 13px;
-    }
-
-    .academy {
-      margin-top: 15px;
-      background: #10182b;
-      border: 1px solid #26324a;
-      border-radius: 18px;
-      padding: 25px 20px;
-    }
-
-    .academy h3 {
-      color: #f5c542;
-      margin-bottom: 15px;
-    }
-
-    .academy ol {
-      padding-left: 22px;
-      color: #c0c8d7;
-    }
-
-    .academy li {
-      margin-bottom: 9px;
     }
 
     .payment {
       text-align: center;
-      background: #0d1220;
-      border-radius: 18px;
+      background: #111827;
+      border-radius: 15px;
       padding: 30px 20px;
-      margin-top: 20px;
     }
 
     .payment strong {
@@ -211,15 +157,14 @@
 
     footer {
       text-align: center;
-      padding: 30px 20px;
-      color: #7f899d;
-      font-size: 13px;
-      border-top: 1px solid #1c2435;
+      padding: 25px;
+      color: #788397;
+      border-top: 1px solid #20283a;
     }
 
     @media (max-width: 500px) {
-      h1 {
-        font-size: 31px;
+      .hero h1 {
+        font-size: 29px;
       }
 
       .courses {
@@ -231,214 +176,175 @@
 
 <body>
 
-  <header>
-    <div class="logo">ABDOUL SERVICE</div>
-    <p>Formations digitales • Création • Marketing</p>
-  </header>
+<header>
+  <div class="logo">ABDOUL SERVICE</div>
+  <p>Formations digitales</p>
+</header>
 
-  <main>
+<section class="hero">
+  <h1>Apprends et développe tes <span>compétences</span></h1>
 
-    <section class="hero">
-      <div class="badge">🔥 FORMATIONS DIGITALES</div>
+  <p>
+    Des formations pratiques sur l'intelligence artificielle,
+    la création de contenu et le marketing digital.
+  </p>
 
-      <h1>
-        Développe tes compétences<br>
-        avec <span>Abdoul Service</span>
-      </h1>
+  <div class="price">
+    1 formation = <span>2 000 FCFA</span>
+  </div>
 
-      <p class="hero-text">
-        Découvre nos formations pratiques sur l'intelligence artificielle,
-        la création de contenu et le marketing digital.
-      </p>
+  <a
+    class="whatsapp"
+    href="https://wa.me/22665400007?text=Bonjour%20Abdoul%20Service%2C%20je%20suis%20interesse%20par%20une%20formation."
+    target="_blank">
+    Commander sur WhatsApp
+  </a>
+</section>
 
-      <div class="price">
-        1 formation = <span>2 000 FCFA</span>
+<section>
+
+  <div class="title">
+    <h2>🔥 Nos formations</h2>
+    <p>Choisis la formation qui t'intéresse</p>
+  </div>
+
+  <div class="courses">
+
+    <div class="course">
+      <div class="number">COURS 1</div>
+      <h3>🎵 Création musicale</h3>
+      <p>Génération de musique personnalisée avec l'IA.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%201." target="_blank">Acheter</a>
       </div>
+    </div>
 
-      <a
-        class="whatsapp"
-        href="https://wa.me/22665400007?text=Bonjour%20Abdoul%20Service%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20une%20formation."
-        target="_blank">
-        💬 Commander sur WhatsApp
-      </a>
-    </section>
-
-
-    <section>
-      <div class="section-title">
-        <h2>🔥 Nos formations</h2>
-        <p>Choisis la formation qui t'intéresse</p>
+    <div class="course">
+      <div class="number">COURS 2</div>
+      <h3>🎨 Logo 3D professionnel</h3>
+      <p>Création et génération de logos 3D professionnels.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%202." target="_blank">Acheter</a>
       </div>
+    </div>
 
-      <div class="courses">
-
-        <div class="course">
-          <div class="number">COURS 1</div>
-          <h3>🎵 Création musicale</h3>
-          <p>Génération de musique personnalisée avec les outils IA.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%201%20-%20Cr%C3%A9ation%20musicale." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 2</div>
-          <h3>🎨 Logo 3D professionnel</h3>
-          <p>Apprends à créer et générer des logos 3D professionnels.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%202%20-%20Logo%203D." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 3</div>
-          <h3>📸 Retouche photo IA</h3>
-          <p>Apprends à améliorer et transformer tes photos avec l'IA.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%203%20-%20Retouche%20photo%20IA." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 4</div>
-          <h3>💍 Invitation de mariage</h3>
-          <p>Création de cartes d'invitation de mariage professionnelles.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%204%20-%20Invitation%20de%20mariage." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 5</div>
-          <h3>📢 Affiche publicitaire IA</h3>
-          <p>Création d'affiches publicitaires professionnelles avec l'IA.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%205%20-%20Affiche%20publicitaire." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 6</div>
-          <h3>🎬 Vidéo hyperréaliste</h3>
-          <p>Découvre la génération vidéo avec Google Flow AI.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%206%20-%20Vid%C3%A9o%20hyperr%C3%A9aliste." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 7</div>
-          <h3>👶 Vidéo bébé danse</h3>
-          <p>Découvre comment créer des vidéos de bébé dansant avec l'IA.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%207%20-%20Vid%C3%A9o%20b%C3%A9b%C3%A9%20danse." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 8</div>
-          <h3>📱 Monétisation TikTok</h3>
-          <p>Découvre les principes de création de contenu et de monétisation.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%208%20-%20Mon%C3%A9tisation%20TikTok." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 9</div>
-          <h3>📘 Monétisation Facebook</h3>
-          <p>Découvre les outils de création et de monétisation Facebook.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%209%20-%20Mon%C3%A9tisation%20Facebook." target="_blank">Acheter</a>
-          </div>
-        </div>
-
-        <div class="course">
-          <div class="number">COURS 10</div>
-          <h3>▶️ Monétisation YouTube</h3>
-          <p>Découvre les principes de développement et de monétisation YouTube.</p>
-          <div class="course-bottom">
-            <span class="course-price">2 000 FCFA</span>
-            <a class="buy" href="https://wa.me/22665400007?text=Bonjour%2C%20je%20veux%20acheter%20le%20Cours%2010%20-%20Mon%C3%A9tisation%20YouTube." target="_blank">Acheter</a>
-          </div>
-        </div>
-
+    <div class="course">
+      <div class="number">COURS 3</div>
+      <h3>📸 Retouche photo IA</h3>
+      <p>Apprentissage de la retouche et amélioration des photos avec l'IA.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%203." target="_blank">Acheter</a>
       </div>
-    </section>
+    </div>
 
-
-    <section>
-      <div class="section-title">
-        <h2>🚀 Biz Connect Academy</h2>
-        <p>Autres formations disponibles</p>
+    <div class="course">
+      <div class="number">COURS 4</div>
+      <h3>💍 Carte d'invitation mariage</h3>
+      <p>Création de cartes d'invitation de mariage.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%204." target="_blank">Acheter</a>
       </div>
+    </div>
 
-      <div class="academy">
-        <h3>16 formations incontournables</h3>
-
-        <ol>
-          <li>Créer des vidéos IA impressionnantes</li>
-          <li>Booster la croissance de TikTok</li>
-          <li>Créer un compte TikTok prêt pour la monétisation</li>
-          <li>Vendre des produits digitaux</li>
-          <li>Comprendre les codes promo 1xBet</li>
-          <li>Accès à Canva Premium</li>
-          <li>Accès à CapCut Premium</li>
-          <li>Récupération d'un compte WhatsApp bloqué</li>
-          <li>Campagnes publicitaires Facebook</li>
-          <li>Création de bot WhatsApp</li>
-          <li>Découvrir les offres Canal+</li>
-          <li>Optimiser les publicités TikTok</li>
-          <li>Comprendre les cartes Visa virtuelles</li>
-          <li>Plus de 1 000 e-books selon leurs licences</li>
-          <li>Facebook Ads</li>
-          <li>Affiliation marketing</li>
-        </ol>
+    <div class="course">
+      <div class="number">COURS 5</div>
+      <h3>📢 Affiche publicitaire</h3>
+      <p>Création d'affiches publicitaires professionnelles avec l'IA.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%205." target="_blank">Acheter</a>
       </div>
-    </section>
+    </div>
 
-
-    <section>
-      <div class="payment">
-        <h2>💳 Comment commander ?</h2>
-
-        <p>
-          <br>
-          1️⃣ Choisis ta formation<br>
-          2️⃣ Effectue le paiement<br>
-          3️⃣ Envoie la preuve de paiement sur WhatsApp<br>
-          4️⃣ Reçois ta formation
-        </p>
-
-        <p style="margin-top:20px;">
-          <strong>Orange Money • Wave</strong><br>
-          +226 65 40 00 07
-        </p>
-
-        <a
-          class="whatsapp"
-          href="https://wa.me/22665400007?text=Bonjour%20Abdoul%20Service%2C%20je%20souhaite%20commander%20une%20formation."
-          target="_blank">
-          💬 Contacter Abdoul Service
-        </a>
+    <div class="course">
+      <div class="number">COURS 6</div>
+      <h3>🎬 Vidéo hyperréaliste</h3>
+      <p>Génération vidéo avec Google Flow AI.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%206." target="_blank">Acheter</a>
       </div>
-    </section>
+    </div>
 
-  </main>
+    <div class="course">
+      <div class="number">COURS 7</div>
+      <h3>👶 Vidéo bébé danse</h3>
+      <p>Création de vidéos bébé danse avec l'IA.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%207." target="_blank">Acheter</a>
+      </div>
+    </div>
 
+    <div class="course">
+      <div class="number">COURS 8</div>
+      <h3>📱 Monétisation TikTok</h3>
+      <p>Découvrir les principes de monétisation TikTok.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%208." target="_blank">Acheter</a>
+      </div>
+    </div>
 
-  <footer>
-    © 2026 Abdoul Service — Formations digitales
-  </footer>
+    <div class="course">
+      <div class="number">COURS 9</div>
+      <h3>📘 Monétisation Facebook</h3>
+      <p>Découvrir les principes de monétisation Facebook.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%209." target="_blank">Acheter</a>
+      </div>
+    </div>
+
+    <div class="course">
+      <div class="number">COURS 10</div>
+      <h3>▶️ Monétisation YouTube</h3>
+      <p>Découvrir les principes de monétisation YouTube.</p>
+      <div class="course-bottom">
+        <span class="course-price">2 000 FCFA</span>
+        <a class="buy" href="https://wa.me/22665400007?text=Je%20veux%20acheter%20le%20Cours%2010." target="_blank">Acheter</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+
+  <div class="title">
+    <h2>💳 Paiement</h2>
+    <p>Orange Money et Wave</p>
+  </div>
+
+  <div class="payment">
+    <p>
+      <strong>Numéro de paiement</strong>
+    </p>
+
+    <p>+226 65 40 00 07</p>
+
+    <p>
+      Après le paiement, contacte Abdoul Service sur WhatsApp
+      et envoie la preuve de paiement.
+    </p>
+
+    <a
+      class="whatsapp"
+      href="https://wa.me/22665400007?text=Bonjour%20Abdoul%20Service%2C%20voici%20ma%20preuve%20de%20paiement."
+      target="_blank">
+      Envoyer la preuve
+    </a>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Abdoul Service — Tous droits réservés
+</footer>
 
 </body>
   </html>
